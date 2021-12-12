@@ -1,4 +1,4 @@
-
+import {firebase, firestore, storage} from './firebase';
 
 export const MARKERS_DATA = [
   {
@@ -8,6 +8,11 @@ export const MARKERS_DATA = [
     color: '#2F3136',
     name: 'Reboot Studio',
     direction: 'Carrer de Pujades, 100',
+    description:"Java Institure",
+    estPrimordial:"false",
+    ficheDescriptive:"",
+    theme:"",
+    typePI:"",
     //img: Reboot,
   },
   {
@@ -17,6 +22,10 @@ export const MARKERS_DATA = [
     color: '#A3EAD8',
     name: 'Cravy',
     direction: 'Carrer de Pujades, 101',
+    description:"Java Institure",
+    ficheDescriptive:"",
+    theme:"",
+    typePI:"",
     //img: Cravy,
   },
   {
@@ -26,6 +35,10 @@ export const MARKERS_DATA = [
     color: '#E990BB',
     name: 'Dribbble',
     direction: 'Carrer de Pujades, 102',
+    description:"Java Institure",
+    ficheDescriptive:"",
+    theme:"",
+    typePI:"",
     //img: Dribbble,
   },
   {
@@ -35,6 +48,10 @@ export const MARKERS_DATA = [
     color: '#EFD080',
     name: 'Basecamp',
     direction: 'Carrer de Pujades, 103',
+    description:"Java Institure",
+    ficheDescriptive:"",
+    theme:"",
+    typePI:"",
     //img: Basecamp,
   },
   {
@@ -44,6 +61,9 @@ export const MARKERS_DATA = [
     color: '#98AFE9',
     name: 'Discord',
     direction: 'Carrer de Pujades, 104',
+    description:"Java Institure",
+    theme:"",
+    typePI:"",
     //img: Discord,
   },
   {
@@ -53,6 +73,10 @@ export const MARKERS_DATA = [
     color: '#4E87EB',
     name: '1 Password',
     direction: 'Carrer de Pujades, 105',
+    description:"Java Institure",
+    ficheDescriptive:"",
+    theme:"",
+    typePI:"",
     //img: OnePassword,
   },
 ];
