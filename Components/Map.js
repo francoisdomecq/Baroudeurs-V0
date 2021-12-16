@@ -3,6 +3,7 @@ import {View,StyleSheet,Dimensions} from 'react-native';
 import MapView, { PROVIDER_GOOGLE,Marker } from 'react-native-maps';
 import {MARKERS_DATA} from '../Data/Markers_Data';
 import { mapStyle } from '../assets/Style/mapStyle';
+import CustomMaker from './CustomMarker';
 
 
 class Map extends React.Component{
@@ -24,16 +25,7 @@ class Map extends React.Component{
                     }
                     }
                 >
-                {MARKERS_DATA.map((marker) => (
-                <Marker
-                    description={marker.description}
-                    key={marker.id}
-                    coordinate={{
-                    latitude: marker.latitude,
-                    longitude: marker.longitude,
-                    }}
-                ></Marker>              
-                ))}
+                <CustomMaker/>
               </MapView>
             </View>
         )

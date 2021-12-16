@@ -1,4 +1,4 @@
-import {firebase, firestore, storage} from './firebase';
+
 
 export const MARKERS_DATA = [
   {
@@ -13,7 +13,7 @@ export const MARKERS_DATA = [
     ficheDescriptive:"",
     theme:"",
     typePI:"",
-    //img: Reboot,
+    img: "iconMarker",
   },
   {
     id: '2',
@@ -23,6 +23,7 @@ export const MARKERS_DATA = [
     name: 'Cravy',
     direction: 'Carrer de Pujades, 101',
     description:"Java Institure",
+    estPrimordial:"false",
     ficheDescriptive:"",
     theme:"",
     typePI:"",
@@ -36,6 +37,7 @@ export const MARKERS_DATA = [
     name: 'Dribbble',
     direction: 'Carrer de Pujades, 102',
     description:"Java Institure",
+    estPrimordial:"false",
     ficheDescriptive:"",
     theme:"",
     typePI:"",
@@ -49,6 +51,7 @@ export const MARKERS_DATA = [
     name: 'Basecamp',
     direction: 'Carrer de Pujades, 103',
     description:"Java Institure",
+    estPrimordial:"false",
     ficheDescriptive:"",
     theme:"",
     typePI:"",
@@ -62,6 +65,7 @@ export const MARKERS_DATA = [
     name: 'Discord',
     direction: 'Carrer de Pujades, 104',
     description:"Java Institure",
+    estPrimordial:"false",
     theme:"",
     typePI:"",
     //img: Discord,
@@ -74,6 +78,7 @@ export const MARKERS_DATA = [
     name: '1 Password',
     direction: 'Carrer de Pujades, 105',
     description:"Java Institure",
+    estPrimordial:"false",
     ficheDescriptive:"",
     theme:"",
     typePI:"",
