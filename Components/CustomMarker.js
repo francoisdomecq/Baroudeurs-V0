@@ -1,7 +1,8 @@
 import React from 'react';
-import { Marker} from 'react-native-maps';
-import { StyleSheet, View } from 'react-native';
+import { Callout, Marker} from 'react-native-maps';
+import { StyleSheet, View,Text ,Image} from 'react-native';
 import {MARKERS_DATA} from '../Data/Markers_Data';
+import FicheDescriptive from './FicheDescriptive';
 
 class CustomMarker extends React.Component{
 
@@ -12,17 +13,20 @@ class CustomMarker extends React.Component{
                 {MARKERS_DATA.map((marker) => (
                     <Marker
                         key={marker.id}
-                        title={marker.title}
-                        description = {marker.description}
+                        
                         pinColor = {marker.color}
                         //icon={require('../assets/iconMarker.png')}
                         coordinate={{
                             latitude:marker.latitude,
                             longitude : marker.longitude,
                         }}
-                        
-                                                
-                    ></Marker>
+                        onPress={() => console.log("pressed")}                    
+                    >
+                        <Callout tooltip>
+                            {FicheDescriptive(marker)}
+                           
+                        </Callout>
+                    </Marker>
                 ))}
             </View>       
         )
@@ -45,4 +49,19 @@ const styles = StyleSheet.create({
       borderColor: 'white',
       borderWidth: 2,
     },
+    tinyLogo: {
+        width: 50,
+        height: 50,
+    },
+    ficheDescriptive:{
+        flexDirection:'column',
+        alignSelf:'flex-start',
+        backgroundColor:'#fff',
+        borderRadius:6,
+        borderLeftColor:'#ccc',
+    },
+    name:{
+        fontSize:16,
+        marginBottom:5,
+    }
   });
