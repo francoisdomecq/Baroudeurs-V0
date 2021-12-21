@@ -24,7 +24,6 @@ class CustomMarker extends React.Component{
                     >
                         <Callout tooltip>
                             {FicheDescriptive(marker)}
-                           
                         </Callout>
                     </Marker>
                 ))}

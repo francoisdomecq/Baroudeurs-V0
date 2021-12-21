@@ -18,8 +18,8 @@ class Map extends React.Component{
                     style={styles.mapStyle}
                     showsUserLocation
                     initialRegion={{
-                      latitude: 44.8414563,
-                      longitude: -0.570378,
+                    latitude: 44.8414563,
+                    longitude: -0.570378,
                     latitudeDelta: 0.003,
                     longitudeDelta: 0.003,
                     }

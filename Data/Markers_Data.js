@@ -12,7 +12,7 @@ export const MARKERS_DATA = [
     estPrimordial:"false",
     theme:"",
     typePI:"",
-    img: "iconMarker",
+    img: require('../assets/Place_de_la_bourse.jpg'),
   },
   {
     id: '2',
@@ -20,12 +20,11 @@ export const MARKERS_DATA = [
     longitude: -0.5745529,
     color: '#A3EAD8',
     name: 'Grand théâtre',
-    direction: 'Carrer de Pujades, 101',
     description:"Grand théâtre de Bordeaux",
     estPrimordial:"false",
-    ficheDescriptive:"",
     theme:"",
     typePI:"",
+    img:require('../assets/miroir_d_eau.jpg')
   },
   {
     id: '3',
@@ -47,11 +46,12 @@ export const MARKERS_DATA = [
     color: '#EFD080',
     name: "Miroir d'eau",
     direction: 'Carrer de Pujades, 103',
-    description:"Miroir d'eau",
+    description:"Le miroir d'eau de Bordeaux est une pièce d'eau peu profonde reflétant la place de la Bourse ainsi que les quais de Bordeaux. En fonctionnement depuis 2006, il présente une superficie de 3 450 m² et un réservoir souterrain de 800 mètres cubes, ce qui en fait le plus grand du monde",
     estPrimordial:"false",
     ficheDescriptive:"",
     theme:"",
     typePI:"",
+    img:require('../assets/miroir_d_eau.jpg')
   },
   {
     id: '5',
@@ -78,4 +78,5 @@ export const MARKERS_DATA = [
     theme:"",
     typePI:"",
   },
+  
 ];

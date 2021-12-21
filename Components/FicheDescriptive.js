@@ -3,15 +3,24 @@ import {View,StyleSheet,Text,Image} from 'react-native';
 import markers from '../Data/Markers_Data'
 
 function FicheDescriptive (markers){
+    var chemin = markers.img
         return(
             <View>
                 <View style={styles.ficheDescriptive}>
-                    <Text style={styles.name}>{markers.name}</Text>
+                    <View style={styles.title}>
+                        <Text style={styles.name}>{markers.name}</Text>
+                    </View>
+                    <View style={styles.containerImage}>
                         <Image
-                            style={styles.tinyLogo}
-                                source={require('../assets/iconMarker.png')}
-                       ></Image>
-                    <Text>{markers.description}</Text>
+                            style={styles.image}
+                            source={chemin}
+                            
+                        ></Image>
+                    </View>
+                    <View styles={styles.containerDescription}>
+                        <Text style = {styles.description} numberOfLines={3}>{markers.description} </Text>
+                    </View>
+                    
                     
                 </View>
             </View>
@@ -21,20 +30,38 @@ function FicheDescriptive (markers){
 export default FicheDescriptive
 
 const styles = StyleSheet.create({
-    tinyLogo: {
-        width: 50,
-        height: 50,
-    },
     ficheDescriptive:{
-        flexDirection:'column',
         alignSelf:'flex-start',
         backgroundColor:'#fff',
         borderRadius:6,
         borderLeftColor:'#ccc',
+        width : 350,
+        },
+
+    title:{
+        flex:1,
+        borderColor : '#000',
+        borderWidth : 1,
+        borderRadius : 3,  
     },
     name:{
-        fontSize:16,
-        marginBottom:5,
+        textAlign : 'center',
+        fontSize:22,
+    },
+    
+    containerImage:{
+        flex:1,
+        marginVertical:20,
+        alignItems:'center'
 
-    }
+    },
+    image: {
+        flex:1,
+    },
+    containerDescription:{
+        marginBottom:20
+    },
+    description:{
+        flexWrap:'wrap',
+    },
 });
