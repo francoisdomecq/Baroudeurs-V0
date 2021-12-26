@@ -9,8 +9,8 @@ import CustomMaker from './CustomMarker';
 class Map extends React.Component{
     state = {
       coordinate : [
-        latitude = 0,
-        longitude = 0
+        latitude= 44.8414563,
+        longitude= -0.570378,
       ]
     }
     render(){
@@ -18,25 +18,57 @@ class Map extends React.Component{
             <View>
               {/*{console.log(this.state.coordinate)}*/}
                 <MapView
-                    onUserLocationChange={(user)=>
-                      this.setState(
-                        {coordinate : user.nativeEvent.coordinate}
-                      )
-                    }  
-                    
-                    followsUserLocation
-                    style ={mapStyle}
+                    ref={ref => { this.map = ref }}
                     customMapStyle = {mapStyle}
                     provider={PROVIDER_GOOGLE}
                     style={styles.mapStyle}
+                    
+                    /*onLayout={() => {
+                      this.map.animateToBearing(220);
+                      this.map.animateCamera({
+                        center: {
+                          latitude: 44.8414563,
+                          longitude: -0.570378,
+                         },
+                        pitch:90,
+                        zoom :18,
+                        heading: 20
+                      });
+                    }}*/
+
+                    onUserLocationChange={(user)=>
+                      //this.setState(
+                        //</View>{coordinate : user.nativeEvent.coordinate}
+                      //)
+                      
+                      this.map.animateCamera({
+                        center: {
+                          latitude: user.nativeEvent.coordinate.latitude,
+                          longitude: user.nativeEvent.coordinate.longitude,
+                         },
+                        pitch:90,
+                        zoom :18,
+                        heading: user.nativeEvent.coordinate.heading
+                      })
+                    }  
                     showsUserLocation
-                    initialRegion={{
+                    showsMyLocationButton={true}
+                    
+                    zoomEnabled={false}
+                    pitchEnabled={false}
+
+                    initalRegion = {{
                       latitude: 44.8414563,
                       longitude: -0.570378,
-                      latitudeDelta: 0.003,
-                      longitudeDelta: 0.003,
-                    }
-                    }   
+
+                    }}
+                    
+                   
+                   
+                   
+                    
+                    
+                    
                 >
                 <CustomMaker/>
               </MapView>
