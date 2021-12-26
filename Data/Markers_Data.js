@@ -1,16 +1,14 @@
-
-
 export const MARKERS_DATA = [
   {
     id: '1',
     latitude: 44.8414563,
     longitude: -0.570378,
-    color: '#2F3136',
+    //color: '#2F3136',
     name: 'Place de la bourse',
     direction: 'Place de la Bourse, 33000 Bordeaux, France',
     description:"Place de la Bourse de bordeaux",
     estPrimordial:"false",
-    theme:"",
+    theme:"religieux",
     typePI:"",
     img: require('../assets/Place_de_la_bourse.jpg'),
   },
@@ -35,7 +33,6 @@ export const MARKERS_DATA = [
     direction: 'Carrer de Pujades, 102',
     description:"Musée d'Aquitaine de bordeaux",
     estPrimordial:"false",
-    ficheDescriptive:"",
     theme:"",
     typePI:"",
   },
@@ -48,7 +45,6 @@ export const MARKERS_DATA = [
     direction: 'Carrer de Pujades, 103',
     description:"Le miroir d'eau de Bordeaux est une pièce d'eau peu profonde reflétant la place de la Bourse ainsi que les quais de Bordeaux. En fonctionnement depuis 2006, il présente une superficie de 3 450 m² et un réservoir souterrain de 800 mètres cubes, ce qui en fait le plus grand du monde",
     estPrimordial:"false",
-    ficheDescriptive:"",
     theme:"",
     typePI:"",
     img:require('../assets/miroir_d_eau.jpg')
@@ -74,7 +70,6 @@ export const MARKERS_DATA = [
     direction: 'Carrer de Pujades, 105',
     description:"Hotel de ville",
     estPrimordial:"false",
-    ficheDescriptive:"",
     theme:"",
     typePI:"",
   },

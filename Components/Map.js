@@ -7,10 +7,23 @@ import CustomMaker from './CustomMarker';
 
 
 class Map extends React.Component{
+    state = {
+      coordinate : [
+        latitude = 0,
+        longitude = 0
+      ]
+    }
     render(){
         return(
             <View>
+              {/*{console.log(this.state.coordinate)}*/}
                 <MapView
+                    onUserLocationChange={(user)=>
+                      this.setState(
+                        {coordinate : user.nativeEvent.coordinate}
+                      )
+                    }  
+                    
                     followsUserLocation
                     style ={mapStyle}
                     customMapStyle = {mapStyle}
@@ -18,12 +31,12 @@ class Map extends React.Component{
                     style={styles.mapStyle}
                     showsUserLocation
                     initialRegion={{
-                    latitude: 44.8414563,
-                    longitude: -0.570378,
-                    latitudeDelta: 0.003,
-                    longitudeDelta: 0.003,
+                      latitude: 44.8414563,
+                      longitude: -0.570378,
+                      latitudeDelta: 0.003,
+                      longitudeDelta: 0.003,
                     }
-                    }
+                    }   
                 >
                 <CustomMaker/>
               </MapView>

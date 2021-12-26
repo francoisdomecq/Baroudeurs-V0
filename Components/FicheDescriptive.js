@@ -3,7 +3,6 @@ import {View,StyleSheet,Text,Image} from 'react-native';
 import markers from '../Data/Markers_Data'
 
 function FicheDescriptive (markers){
-    var chemin = markers.img
         return(
             <View>
                 <View style={styles.ficheDescriptive}>
@@ -13,8 +12,7 @@ function FicheDescriptive (markers){
                     <View style={styles.containerImage}>
                         <Image
                             style={styles.image}
-                            source={chemin}
-                            
+                            source={markers.img}
                         ></Image>
                     </View>
                     <View styles={styles.containerDescription}>

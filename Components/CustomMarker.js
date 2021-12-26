@@ -5,15 +5,12 @@ import {MARKERS_DATA} from '../Data/Markers_Data';
 import FicheDescriptive from './FicheDescriptive';
 
 class CustomMarker extends React.Component{
-
-
     render(){
         return (
             <View>
                 {MARKERS_DATA.map((marker) => (
                     <Marker
                         key={marker.id}
-                        
                         pinColor = {marker.color}
                         //icon={require('../assets/iconMarker.png')}
                         coordinate={{
