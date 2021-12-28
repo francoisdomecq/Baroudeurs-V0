@@ -7,12 +7,6 @@ import CustomMaker from './CustomMarker';
 
 
 class Map extends React.Component{
-    state = {
-      coordinate : [
-        latitude= 44.8414563,
-        longitude= -0.570378,
-      ]
-    }
     render(){
         return(
             <View>
@@ -40,11 +34,10 @@ class Map extends React.Component{
                       //this.setState(
                         //</View>{coordinate : user.nativeEvent.coordinate}
                       //)
-                      
                       this.map.animateCamera({
                         center: {
-                          latitude: user.nativeEvent.coordinate.latitude,
-                          longitude: user.nativeEvent.coordinate.longitude,
+                          latitude: 44.8414563,//user.nativeEvent.coordinate.latitude,
+                          longitude: -0.570378//user.nativeEvent.coordinate.longitude,
                          },
                         pitch:90,
                         zoom :18,
@@ -52,23 +45,10 @@ class Map extends React.Component{
                       })
                     }  
                     showsUserLocation
-                    showsMyLocationButton={true}
+                    //showsMyLocationButton={true}
                     
                     zoomEnabled={false}
-                    pitchEnabled={false}
-
-                    initalRegion = {{
-                      latitude: 44.8414563,
-                      longitude: -0.570378,
-
-                    }}
-                    
-                   
-                   
-                   
-                    
-                    
-                    
+                    pitchEnabled={false}   
                 >
                 <CustomMaker/>
               </MapView>
