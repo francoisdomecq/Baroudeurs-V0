@@ -1,8 +1,9 @@
 import React from 'react';
-import { TouchableOpacity, ScrollView, Text, View, StyleSheet, Dimensions } from 'react-native';
+import { TouchableOpacity, ScrollView, Text, View, StyleSheet, Dimensions, Button } from 'react-native';
 import MapView, { PROVIDER_GOOGLE, Marker } from 'react-native-maps';
 import { THEMES } from '../Data/Themes';
 import { mapStyle } from '../assets/Style/mapStyle';
+import { mapStyleLight } from "../assets/Style/mapStyle_light";
 import CustomMaker from './CustomMarker';
 
 class Map extends React.Component {
@@ -12,19 +13,33 @@ class Map extends React.Component {
       themeChoisi:""
     }
 
+    super(props)
+      this.state = {
+        colormapdark:true
+      }
   }
   _choixTheme(theme){
     console.log("ok")
     this.setState({themeChoisi: theme})
-
   }
+  _modeSombre(){
+        console.log(this.state.colormapdark)
+        this.setState({colormapdark: (!this.state.colormapdark)});
+      };
+
   render() {
     const { navigation } = this.props;
     return (
       <View>
+
+        <Button
+          title={this.state.colormapdark? "Désactiver le mode sombre" : "Activer le mode sombre"}
+          color={this.state.colormapdark? "gray" : "#f8c967"}
+          onPress={() => this._modeSombre()}
+        />
         <MapView
           ref={ref => { this.map = ref }}
-          customMapStyle={mapStyle}
+          customMapStyle={this.state.colormapdark ? mapStyle : mapStyleLight}
           provider={PROVIDER_GOOGLE}
           style={styles.mapStyle}
 
@@ -117,4 +132,3 @@ const styles = StyleSheet.create({
     height: 22,
   }
 });
-
