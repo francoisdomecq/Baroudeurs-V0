@@ -1,4 +1,4 @@
-export const MARKERS_DATA = [
+export const MARKERS_DETAILS = [
   {
     id: '1',
     latitude: 44.8414563,

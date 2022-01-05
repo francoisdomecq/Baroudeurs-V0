@@ -1,26 +1,37 @@
 import React from 'react';
-import { Callout, Marker} from 'react-native-maps';
-import { StyleSheet, View,Text ,Image} from 'react-native';
+import { Callout, CalloutSubview, Marker} from 'react-native-maps';
+import { StyleSheet, View,Text ,Image,Button} from 'react-native';
 import {MARKERS_DATA} from '../Data/Markers_Data';
 import FicheDescriptive from './FicheDescriptive';
 
+
 class CustomMarker extends React.Component{
+    constructor (props) {
+        super(props)
+    }
     render(){
+        const {navigation} = this.props;
         return (
-            <View>
+      
+      <View>
                 {MARKERS_DATA.map((marker) => (
                     <Marker
                         key={marker.id}
-                        pinColor = {marker.color}
-                        //icon={require('../assets/iconMarker.png')}
+                        //pinColor = {marker.color}
+                        icon={marker.imgmarker}
                         coordinate={{
                             latitude:marker.latitude,
                             longitude : marker.longitude,
-                        }}
-                        onPress={() => console.log("pressed")}                    
+                        }}                 
                     >
                         <Callout tooltip>
-                            {FicheDescriptive(marker)}
+                            <CalloutSubview onPress={() => {
+                                navigation.navigate('Details');}
+                                }
+                            >
+                                {FicheDescriptive(marker)}
+                            </CalloutSubview>
+                        
                         </Callout>
                     </Marker>
                 ))}

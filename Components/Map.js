@@ -1,13 +1,20 @@
 import React from 'react';
-import {View,StyleSheet,Dimensions} from 'react-native';
+import {View,StyleSheet,Dimensions,Button} from 'react-native';
 import MapView, { PROVIDER_GOOGLE,Marker } from 'react-native-maps';
 import {MARKERS_DATA} from '../Data/Markers_Data';
 import { mapStyle } from '../assets/Style/mapStyle';
 import CustomMaker from './CustomMarker';
+import { NavigationContainer } from '@react-navigation/native';
+
+
 
 
 class Map extends React.Component{
-    render(){
+  constructor (props) {
+    super(props)
+}
+    render( ){
+      const {navigation} = this.props;
         return(
             <View>
               {/*{console.log(this.state.coordinate)}*/}
@@ -50,7 +57,10 @@ class Map extends React.Component{
                     zoomEnabled={false}
                     pitchEnabled={false}   
                 >
-                <CustomMaker/>
+                
+                <CustomMaker navigation={navigation}/>
+                
+               
               </MapView>
             </View>
         )
@@ -71,3 +81,4 @@ const styles = StyleSheet.create({
       height: Dimensions.get('window').height,
     },
   });
+
