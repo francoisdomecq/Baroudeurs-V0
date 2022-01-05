@@ -11,7 +11,7 @@ function Details (markers){
 {MARKERS_DETAILS.map((markers) => (
   
   <View>
-          <View style={styles.ficheDescriptive}>
+          <View style={styles.Details}>
               <View style={styles.title}>
                   <Text style={styles.name}>{markers.name}</Text>
               </View>
