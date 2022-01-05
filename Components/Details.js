@@ -7,27 +7,27 @@ function Details(markers) {
     return (
         <View>
 
-            {MARKERS_DETAILS.map((markers) => (
-
-                <View>
-                    <View style={styles.ficheDescriptive}>
-                        <View style={styles.title}>
-                            <Text style={styles.name}>{markers.name}</Text>
-                        </View>
-                        <View style={styles.containerImage}>
-                            <Image
-                                style={styles.image}
-                                source={markers.img}
-                            ></Image>
-                        </View>
-                        <View style={styles.containerDescription}>
-                            <Text style={styles.description} numberOfLines={3}>{markers.description} </Text>
-                        </View>
-                    </View>
-                </View>
-            ))}
-        </View>
-    )
+{MARKERS_DETAILS.map((markers) => (
+  
+  <View>
+          <View style={styles.Details}>
+              <View style={styles.title}>
+                  <Text style={styles.name}>{markers.name}</Text>
+              </View>
+              <View style={styles.containerImage}>
+                  <Image
+                      style={styles.image}
+                      source={markers.img}
+                  ></Image>
+              </View>
+              <View style={styles.containerDescription}>
+                <Text style = {styles.description} numberOfLines={3}>{markers.description} </Text>
+              </View>
+          </View>
+      </View>
+))}
+      </View>
+  )
 }
 
 
