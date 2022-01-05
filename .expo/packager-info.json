@@ -1,8 +1,10 @@
 {
-  "expoServerNgrokUrl": "https://fs-4af.anonymous.baroud.exp.direct",
-  "packagerNgrokUrl": "https://packager.fs-4af.anonymous.baroud.exp.direct",
-  "ngrokPid": 22032,
-  "devToolsPort": 19006,
-  "expoServerPort": 19004,
-  "packagerPort": 19004
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
+  "devToolsPort": 19002,
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "webpackServerPort": null
 }

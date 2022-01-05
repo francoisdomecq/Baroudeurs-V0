@@ -1,10 +1,8 @@
 import React from 'react';
-import {View,StyleSheet,Text,Image,TouchableOpacity} from 'react-native';
-import markers from '../Data/Markers_Data'
+import { View, StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
 
-
-  function FicheDescriptive (markers){
-    return(
+function FicheDescriptive(markers) {
+    return (
         <View>
             <View style={styles.ficheDescriptive}>
                 <View style={styles.title}>
@@ -17,7 +15,7 @@ import markers from '../Data/Markers_Data'
                     ></Image>
                 </View>
                 <View style={styles.containerDescription}>
-                    <Text style = {styles.description} numberOfLines={3}>{markers.description} </Text>
+                    <Text style={styles.description} numberOfLines={3}>{markers.description} </Text>
                 </View>
             </View>
         </View>
@@ -27,38 +25,38 @@ import markers from '../Data/Markers_Data'
 export default FicheDescriptive
 
 const styles = StyleSheet.create({
-ficheDescriptive:{
-    alignSelf:'flex-start',
-    backgroundColor:'#fff',
-    borderRadius:6,
-    borderLeftColor:'#ccc',
-    width : 350,
+    ficheDescriptive: {
+        alignSelf: 'flex-start',
+        backgroundColor: '#fff',
+        borderRadius: 6,
+        borderLeftColor: '#ccc',
+        width: 350,
     },
 
-title:{
-    flex:1,
-    borderColor : '#000',
-    borderWidth : 1,
-    borderRadius : 3,  
-},
-name:{
-    textAlign : 'center',
-    fontSize:22,
-},
+    title: {
+        flex: 1,
+        borderColor: '#000',
+        borderWidth: 1,
+        borderRadius: 3,
+    },
+    name: {
+        textAlign: 'center',
+        fontSize: 22,
+    },
 
-containerImage:{
-    flex:1,
-    marginVertical:20,
-    alignItems:'center'
+    containerImage: {
+        flex: 1,
+        marginVertical: 20,
+        alignItems: 'center'
 
-},
-image: {
-    flex:1,
-},
-containerDescription:{
-    marginBottom:20
-},
-description:{
-    flexWrap:'wrap',
-},
+    },
+    image: {
+        flex: 1,
+    },
+    containerDescription: {
+        marginBottom: 20
+    },
+    description: {
+        flexWrap: 'wrap',
+    },
 });
