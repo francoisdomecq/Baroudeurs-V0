@@ -10,8 +10,8 @@ export const MARKERS_DATA = [
     estPrimordial:"true",
     theme:"Panorama",
     typePI:"Espace extérieur",
-    img: require('../assets/Place_de_la_bourse.jpg'),
-    imgmarker : require('../assets/PLACEBOURSE.png'),
+    img: require('../assets/Places/Place_de_la_bourse.jpg'),
+    imgmarker : require('../assets/Icon/PLACEBOURSE.png'),
 
   },
   {
@@ -24,8 +24,8 @@ export const MARKERS_DATA = [
     estPrimordial:"true",
     theme:"Art",
     typePI:"Batiment historique",
-    img:require('../assets/miroir_d_eau.jpg'),
-    imgmarker : require('../assets/GRANDTHEATRE.png'),
+    img:require('../assets/Places/GrandTheatre.jpg'),
+    imgmarker : require('../assets/Icon/GRANDTHEATRE.png'),
   },
   {
     id: '3',
@@ -38,7 +38,8 @@ export const MARKERS_DATA = [
     estPrimordial:"true",
     theme:"Histoire",
     typePI:"Musée",
-    imgmarker : require('../assets/MUSEEAQUITAINE.png'),
+    img:require('../assets/Places/MuseeAquitaine.jpg'),
+    imgmarker : require('../assets/Icon/MUSEEAQUITAINE.png'),
   },
   {
     id: '4',
@@ -51,8 +52,8 @@ export const MARKERS_DATA = [
     estPrimordial:"true",
     theme:"Panorama",
     typePI:"Espace extérieur",
-    img:require('../assets/miroir_d_eau.jpg'),
-    imgmarker : require('../assets/PLACEBOURSE.png'),
+    img:require('../assets/Places/miroir_d_eau.jpg'),
+    imgmarker : require('../assets/Icon/PLACEBOURSE.png'),
   },
   {
     id: '5',
@@ -65,7 +66,8 @@ export const MARKERS_DATA = [
     estPrimordial:"true",
     theme:"Panorama",
     typePI:"Batiment historique",
-    imgmarker : require('../assets/PONTDEPIERRE.png'),
+    img: require('../assets/Places/PontDePierre.jpg'),
+    imgmarker : require('../assets/Icon/PONTDEPIERRE.png'),
   },
   {
     id: '6',
@@ -78,7 +80,8 @@ export const MARKERS_DATA = [
     estPrimordial:"true",
     theme:"Histoire",
     typePI:"Batiment autre",
-    imgmarker : require('../assets/HOTELDEVILLE.png'),
+    img: require('../assets/Places/HotelDeVille.jpg'),
+    imgmarker : require('../assets/Icon/HOTELDEVILLE.png'),
   },
 
   {
@@ -92,7 +95,8 @@ export const MARKERS_DATA = [
     estPrimordial:"false",
     theme:"Gastronomie",
     typePI:"Bar/Restaurant",
-    imgmarker : require('../assets/DICKENS.png'),
+    img: require('../assets/Places/CharlesDickens.jpg'),
+    imgmarker : require('../assets/Icon/DICKENS.png'),
   },
   
 ];

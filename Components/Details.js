@@ -1,10 +1,11 @@
 import React from 'react';
-import {View,StyleSheet,Text,Image, Button} from 'react-native';
-import {MARKERS_DETAILS} from '../Data/Marker_Details';
+import { View, StyleSheet, Text, Image, Button } from 'react-native';
+import { MARKERS_DETAILS } from '../Data/Marker_Details';
 
 
-function Details (){
-  return(
+function Details(markers) {
+    return (
+        <View>
 
   <View>
           <View style={styles.Details}>
@@ -30,40 +31,38 @@ export default Details
 
 
 const styles = StyleSheet.create({
-Details:{
-  alignSelf:'flex-start',
-  backgroundColor:'#fff',
-  borderRadius:6,
-  borderLeftColor:'#ccc',
-  width : 350,
-  },
+    Details: {
+        alignSelf: 'flex-start',
+        backgroundColor: '#fff',
+        borderRadius: 6,
+        borderLeftColor: '#ccc',
+        width: 350,
+    },
 
-title:{
-  flex:1,
-  borderColor : '#000',
-  borderWidth : 1,
-  borderRadius : 3,  
-},
-name:{
-  textAlign : 'center',
-  fontSize:22,
-},
+    title: {
+        flex: 1,
+        borderColor: '#000',
+        borderWidth: 1,
+        borderRadius: 3,
+    },
+    name: {
+        textAlign: 'center',
+        fontSize: 22,
+    },
 
-containerImage:{
-  flex:1,
-  marginVertical:20,
-  alignItems:'center'
+    containerImage: {
+        flex: 1,
+        marginVertical: 20,
+        alignItems: 'center'
 
-},
-image: {
-  flex:1,
-},
-containerDescription:{
-  marginBottom:20
-},
-description:{
-  flexWrap:'wrap',
-},
+    },
+    image: {
+        flex: 1,
+    },
+    containerDescription: {
+        marginBottom: 20
+    },
+    description: {
+        flexWrap: 'wrap',
+    },
 });
-
-

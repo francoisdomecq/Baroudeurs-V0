@@ -10,8 +10,7 @@ export const MARKERS_DETAILS = [
     estPrimordial:"true",
     theme:"Panorama",
     typePI:"Espace extérieur",
-    img: require('../assets/Place_de_la_bourse.jpg'),
-    imgmarker : require('../assets/PLACEBOURSE.png'),
+    imgmarker : require('../assets/Icon/PLACEBOURSE.png'),
 
   },
   {
@@ -24,8 +23,7 @@ export const MARKERS_DETAILS = [
     estPrimordial:"true",
     theme:"Art",
     typePI:"Batiment historique",
-    img:require('../assets/miroir_d_eau.jpg'),
-    imgmarker : require('../assets/GRANDTHEATRE.png'),
+    imgmarker : require('../assets/Icon/GRANDTHEATRE.png'),
   },
   {
     id: '3',
@@ -38,7 +36,7 @@ export const MARKERS_DETAILS = [
     estPrimordial:"true",
     theme:"Histoire",
     typePI:"Musée",
-    imgmarker : require('../assets/MUSEEAQUITAINE.png'),
+    imgmarker : require('../assets/Icon/MUSEEAQUITAINE.png'),
   },
   {
     id: '4',
@@ -51,8 +49,7 @@ export const MARKERS_DETAILS = [
     estPrimordial:"true",
     theme:"Panorama",
     typePI:"Espace extérieur",
-    img:require('../assets/miroir_d_eau.jpg'),
-    imgmarker : require('../assets/PLACEBOURSE.png'),
+    imgmarker : require('../assets/Icon/PLACEBOURSE.png'),
   },
   {
     id: '5',
@@ -65,7 +62,7 @@ export const MARKERS_DETAILS = [
     estPrimordial:"true",
     theme:"Panorama",
     typePI:"Batiment historique",
-    imgmarker : require('../assets/PONTDEPIERRE.png'),
+    imgmarker : require('../assets/Icon/PONTDEPIERRE.png'),
   },
   {
     id: '6',
@@ -78,7 +75,7 @@ export const MARKERS_DETAILS = [
     estPrimordial:"true",
     theme:"Histoire",
     typePI:"Batiment autre",
-    imgmarker : require('../assets/HOTELDEVILLE.png'),
+    imgmarker : require('../assets/Icon/HOTELDEVILLE.png'),
   },
 
   {
@@ -92,7 +89,7 @@ export const MARKERS_DETAILS = [
     estPrimordial:"false",
     theme:"Gastronomie",
     typePI:"Bar/Restaurant",
-    imgmarker : require('../assets/DICKENS.png'),
+    imgmarker : require('../assets/Icon/DICKENS.png'),
   },
   
 ];
