@@ -5,7 +5,6 @@ import { MARKERS_DETAILS } from '../Data/Marker_Details';
 
 function Details(markers) {
     return (
-        <View>
 
   <View>
           <View style={styles.Details}>
