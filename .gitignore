@@ -13,3 +13,4 @@ web-build/
 .DS_Store
 .expo/settings.json
 .expo/packager-info.json
+app.json
