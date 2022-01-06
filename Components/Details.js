@@ -3,22 +3,24 @@ import { View, StyleSheet, Text, Image, Button } from 'react-native';
 import { MARKERS_DETAILS } from '../Data/Marker_Details';
 
 
-function Details(markers) {
-    return (
 
+function Details({route,navigation}){ 
+  const{marker}= route.params;
+    return (
+      
   <View>
-          <View style={styles.Details}>
-              <View style={styles.title}>
-                  <Text style={styles.name}>{markers.name}</Text>
+          <View >
+              <View>
+                  <Text>{marker.name}</Text>
               </View>
-              <View style={styles.containerImage}>
+              <View>
                   <Image
-                      style={styles.image}
-                      source={markers.img}
+                      
+                      source={marker.img}
                   ></Image>
               </View>
-              <View style={styles.containerDescription}>
-                <Text style = {styles.description} numberOfLines={3}>{markers.description} </Text>
+              <View>
+                <Text>{marker.description} </Text>
               </View>
           </View>
       </View>
@@ -29,39 +31,3 @@ function Details(markers) {
 export default Details
 
 
-const styles = StyleSheet.create({
-    Details: {
-        alignSelf: 'flex-start',
-        backgroundColor: '#fff',
-        borderRadius: 6,
-        borderLeftColor: '#ccc',
-        width: 350,
-    },
-
-    title: {
-        flex: 1,
-        borderColor: '#000',
-        borderWidth: 1,
-        borderRadius: 3,
-    },
-    name: {
-        textAlign: 'center',
-        fontSize: 22,
-    },
-
-    containerImage: {
-        flex: 1,
-        marginVertical: 20,
-        alignItems: 'center'
-
-    },
-    image: {
-        flex: 1,
-    },
-    containerDescription: {
-        marginBottom: 20
-    },
-    description: {
-        flexWrap: 'wrap',
-    },
-});
