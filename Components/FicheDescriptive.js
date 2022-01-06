@@ -15,7 +15,7 @@ function FicheDescriptive(markers) {
                     ></Image>
                 </View>
                 <View style={styles.containerDescription}>
-                    <Text style={styles.description} numberOfLines={3}>{markers.description} </Text>
+                    <Text style={styles.description} numberOfLines={7}>{markers.description} </Text>
                 </View>
             </View>
         </View>
@@ -30,20 +30,20 @@ const styles = StyleSheet.create({
         backgroundColor: '#EAE0D5',
         borderRadius: 20,
         width: 350,
-        textAlign:'center'
+        textAlign: 'center'
     },
 
     title: {
         flex: 1,
         borderColor: '#000',
-        backgroundColor:"#70877F",
+        backgroundColor: "#70877F",
         borderWidth: 2,
         borderRadius: 20,
     },
     name: {
         textAlign: 'center',
         fontSize: 25,
-        fontWeight:'bold',
+        fontWeight: 'bold',
     },
 
     containerImage: {
@@ -55,19 +55,19 @@ const styles = StyleSheet.create({
     image: {
         flex: 1,
         width: 330,
-        height:300,
-        borderRadius:20,
+        height: 300,
+        borderRadius: 20,
     },
     containerDescription: {
         marginBottom: 15,
-        textAlign:'center',
-        marginHorizontal:10,
+        textAlign: 'center',
+        marginHorizontal: 10,
     },
     description: {
         flexWrap: 'wrap',
-        color:"#352208",
-        borderRadius:20,
-        fontSize:12,
-        
+        color: "#352208",
+        borderRadius: 20,
+        fontSize: 12,
+
     },
 });

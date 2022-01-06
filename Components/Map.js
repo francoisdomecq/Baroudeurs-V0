@@ -82,31 +82,31 @@ class Map extends React.Component {
           </MapView>
         </View>
 
-          <ScrollView
-            horizontal
-            scrollEventThrottle={1}
-            showsHorizontalScrollIndicator={false}
-            height={50}
-            style={styles.scrollview}
-          >
-            {THEMES.map((themes) => (
+        <ScrollView
+          horizontal
+          scrollEventThrottle={1}
+          showsHorizontalScrollIndicator={false}
+          height={50}
+          style={styles.scrollview}
+        >
+          {THEMES.map((themes) => (
 
-              <TouchableOpacity
+            <TouchableOpacity
               key={themes.id}
-                test={this.state.themeChoisi}
-                theme={themes.name}
-                style={styles.itemsTheme}
-                onPress={() => this._choixTheme(themes.name)}
-              >
-                <Text>{themes.name}</Text>
-              </TouchableOpacity>
+              test={this.state.themeChoisi}
+              theme={themes.name}
+              style={styles.itemsTheme}
+              onPress={() => this._choixTheme(themes.name)}
+            >
+              <Text>{themes.name}</Text>
+            </TouchableOpacity>
 
-            ))
+          ))
 
-            }
+          }
 
-          </ScrollView>
-        
+        </ScrollView>
+
       </View>
 
     )
@@ -134,8 +134,8 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
     height: 22,
   },
-  container:{
-    backgroundColor:'transparent'
+  container: {
+    backgroundColor: 'transparent'
 
   },
   containerTheme: {
@@ -148,15 +148,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     width: 200,
     height: 43,
-    borderRadius:20
+    borderRadius: 20
   },
   theme: {
     flexDirection: "row",
     alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center',
-    backgroundColor:'#fff',
-    shadowColor:'#000',
+    backgroundColor: '#fff',
+    shadowColor: '#000',
     height: 35,
     width: 200,
     borderRadius: 20,

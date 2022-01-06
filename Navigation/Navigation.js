@@ -5,11 +5,6 @@ import Map from '../Components/Map';
 import { View, StyleSheet, Dimensions, Button } from 'react-native';
 import Details from '../Components/Details';
 
-
-
-
-
-
 const Stack = createNativeStackNavigator();
 
 class Navigation extends React.Component {
