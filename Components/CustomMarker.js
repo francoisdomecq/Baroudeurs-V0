@@ -26,7 +26,8 @@ class CustomMarker extends React.Component{
                     >
                         <Callout tooltip>
                             <CalloutSubview onPress={() => {
-                                navigation.navigate('Details');}
+                                navigation.navigate('Details', {id:marker.id,
+                                  });}
                                 }
                             >
                                 {FicheDescriptive(marker)}

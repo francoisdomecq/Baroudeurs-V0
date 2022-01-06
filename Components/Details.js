@@ -1,15 +1,11 @@
 import React from 'react';
 import {View,StyleSheet,Text,Image, Button} from 'react-native';
-import markers from '../Data/Markers_Data';
 import {MARKERS_DETAILS} from '../Data/Marker_Details';
 
 
-function Details (markers){
+function Details (){
   return(
-      <View>
 
-{MARKERS_DETAILS.map((markers) => (
-  
   <View>
           <View style={styles.Details}>
               <View style={styles.title}>
@@ -26,12 +22,8 @@ function Details (markers){
               </View>
           </View>
       </View>
-))}
-      </View>
   )
 }
-
-
 
 
 export default Details
