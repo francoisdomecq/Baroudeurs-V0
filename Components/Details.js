@@ -1,8 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Text, Image, Button } from 'react-native';
 
-
-
+//Cette fonction affiche les détails d'un point d'intérêt lorsque l'utilisateur sur la fiche descriptive
 function Details({ route, navigation }) {
     const { marker } = route.params;
     return (

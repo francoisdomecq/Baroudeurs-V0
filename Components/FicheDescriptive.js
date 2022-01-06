@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
 
+//Cette fonction permet d'afficher la fiche descriptive d'un marqueur. Elle prend donc en entrée le marqueur à afficher afin d'afficher les différentes informations
 function FicheDescriptive(markers) {
     return (
         <View>

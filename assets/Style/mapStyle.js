@@ -33,27 +33,10 @@ export const mapStyle = [
   },
   {
     "featureType": "administrative",
-    "stylers": [
-      {
-        "visibility": "simplified"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative",
     "elementType": "geometry",
     "stylers": [
       {
         "color": "#757575"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative",
-    "elementType": "labels.icon",
-    "stylers": [
-      {
-        "visibility": "off"
       }
     ]
   },
@@ -84,22 +67,6 @@ export const mapStyle = [
     ]
   },
   {
-    "featureType": "administrative.neighborhood",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
     "featureType": "poi",
     "elementType": "labels.text.fill",
     "stylers": [
@@ -109,28 +76,11 @@ export const mapStyle = [
     ]
   },
   {
-    "featureType": "poi.business",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
     "featureType": "poi.park",
     "elementType": "geometry",
     "stylers": [
       {
         "color": "#181818"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "visibility": "off"
       }
     ]
   },
@@ -158,15 +108,6 @@ export const mapStyle = [
     "stylers": [
       {
         "color": "#2c2c2c"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "elementType": "labels",
-    "stylers": [
-      {
-        "visibility": "off"
       }
     ]
   },
@@ -230,33 +171,6 @@ export const mapStyle = [
     "stylers": [
       {
         "color": "#000000"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "elementType": "geometry.fill",
-    "stylers": [
-      {
-        "color": "#c2c2c2"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "elementType": "labels.icon",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "visibility": "off"
       }
     ]
   },
